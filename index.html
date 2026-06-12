@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeSpark — Privacy Policy</title>
+<style>
+  :root {
+    --fg: #1c1c1e;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --panel: #f4f4f5;
+    --border: #e4e4e7;
+    --accent: #0a8d93;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f4f4f5;
+      --muted: #a1a1aa;
+      --bg: #071f33;
+      --panel: #0e2a40;
+      --border: #1d3a52;
+      --accent: #3ec3c9;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin: 40px 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .effective {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 8px;
+  }
+  .intro {
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin: 16px 0 0;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 36px 0;
+  }
+  p, ul, ol { margin: 10px 0; }
+  ul, ol { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(10, 141, 147, 0.35);
+  }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { font-weight: 650; }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>DeSpark — Privacy Policy</h1>
+<p class="effective"><strong>Effective date:</strong> June 12, 2026</p>
+<p class="intro">This policy explains what data DeSpark collects and the choices you have. It is written in plain English on purpose — and because DeSpark collects nothing, it is short.</p>
+
+<hr>
+
+<h2>1. The short version</h2>
+<p><strong>DeSpark does not collect, store, or transmit any data about you.</strong> The app works entirely on your device:</p>
+<ul>
+  <li>No network access — the app never connects to the internet.</li>
+  <li>No analytics, no crash reporting, no advertising, no tracking SDKs.</li>
+  <li>No accounts, no sign-in, no identifiers.</li>
+</ul>
+<p>Every image you clean is processed locally on your phone and never leaves it.</p>
+
+<hr>
+
+<h2>2. Who we are</h2>
+<p>DeSpark is an iOS app that removes the visible Gemini sparkle watermark from AI-generated images. It is developed and operated by <strong>Abdullah Al Hadi</strong> ("we", "us"). To the extent the EU / UK / EEA General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA) applies, Abdullah Al Hadi is the <strong>data controller</strong> — though, as described below, we hold no personal data about you at all. For any privacy questions, contact us at <strong>hadi.fiftytwo@gmail.com</strong>.</p>
+<p>This policy covers the DeSpark iOS app and its bundled Share Extension.</p>
+
+<hr>
+
+<h2>3. Data that stays on your device</h2>
+<p>Everything below is stored locally on your device, inside DeSpark's private app container. We never see it. If you have iCloud Backup enabled on your iPhone, Apple includes this data in your encrypted iCloud backup — that backup is between you and Apple; we have no access to it.</p>
+<ul>
+  <li><strong>Images you open</strong> — the photo you pick, paste, or share into the app, held in memory while it is processed.</li>
+  <li><strong>Gallery history</strong> — after a successful clean, DeSpark keeps the before/after pair and a small thumbnail so you can revisit and re-share results from the Gallery tab.</li>
+</ul>
+<p>You can delete any of this at any time from within the app (delete a single result in its viewer, or Settings → "Clear gallery"). Uninstalling the app removes all of it.</p>
+<p>Nothing is sent anywhere. There is no "our servers" — the app has no server.</p>
+
+<hr>
+
+<h2>4. Permissions the app asks for</h2>
+<ul>
+  <li><strong>Photo library (choosing an image)</strong> — the system photo picker runs outside the app; DeSpark receives only the image you explicitly select, never your whole library.</li>
+  <li><strong>Photo library (saving)</strong> — iOS asks for add-only permission the first time you save a cleaned image. This permission lets DeSpark add images to your library; it does not let it read your library.</li>
+  <li><strong>Clipboard</strong> — read only when you tap "Paste image", via the standard iOS paste mechanism (iOS shows its own paste notice). DeSpark never reads the clipboard in the background.</li>
+  <li><strong>Share Extension</strong> — when you use "Share → DeSpark" from another app, the extension receives only the image you shared and hands it to the app through a private on-device container.</li>
+</ul>
+
+<hr>
+
+<h2>5. How the processing works</h2>
+<p>Watermark removal runs entirely on your device: the app detects the visible sparkle watermark in the image corner and reverses its blend. Only the <strong>visible</strong> watermark is affected — Google's invisible SynthID provenance signal embedded in Gemini images is not read, altered, or removed by DeSpark.</p>
+
+<hr>
+
+<h2>6. What we never do</h2>
+<ul>
+  <li>We never transmit your images or any derivative of them.</li>
+  <li>We do not sell or share personal information (as those terms are defined under the CCPA/CPRA) — we have none to sell.</li>
+  <li>We do not bundle any third-party analytics, advertising, or tracking SDK.</li>
+  <li>We do not request App Tracking Transparency permission, because there is no tracking.</li>
+</ul>
+
+<hr>
+
+<h2>7. Children</h2>
+<p>DeSpark does not collect data from anyone, including children. The app has no accounts, no social features, and no advertising.</p>
+
+<hr>
+
+<h2>8. Your rights</h2>
+<p>Under the GDPR, CCPA/CPRA, and similar laws you have rights to access, correct, delete, and port your personal data. Because DeSpark holds no data about you, these rights are satisfied by design: everything the app stores is on your device and under your direct control. Deleting it is described in section 3. If you still have a question or concern, email <strong>hadi.fiftytwo@gmail.com</strong> and we will respond.</p>
+
+<hr>
+
+<h2>9. Changes to this policy</h2>
+<p>If the app's data practices ever change (for example, if a future version adds opt-in crash reporting), we will update this policy, change the effective date at the top, and describe the change here before it ships.</p>
+
+<hr>
+
+<h2>10. Contact</h2>
+<p><strong>Abdullah Al Hadi</strong><br>
+Email: <strong>hadi.fiftytwo@gmail.com</strong></p>
+
+<footer>
+DeSpark — on-device Gemini watermark removal. This page is the canonical privacy policy for the DeSpark iOS app.
+</footer>
+
+</main>
+</body>
+</html>
