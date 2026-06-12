@@ -20,7 +20,7 @@ Every image you clean is processed locally on your phone and never leaves it.
 
 ## 2. Who we are
 
-DeSpark is an iOS app that removes the visible Gemini sparkle watermark from AI-generated images. It is developed and operated by **Abdullah Al Hadi** ("we", "us"). To the extent the EU / UK / EEA General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA) applies, Abdullah Al Hadi is the **data controller** — though, as described below, we hold no personal data about you at all. For any privacy questions, contact us at **hadi.fiftytwo@gmail.com**.
+DeSpark is an iOS app that removes the visible Gemini sparkle watermark from AI-generated images. It is developed and operated by **Abdullah Al Hadi** ("we", "us"). To the extent the EU / UK / EEA General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA) applies, Abdullah Al Hadi is the **data controller** — though, as described below, we hold no personal data about you at all. For any privacy questions, contact us at **mukashi.dev@gmail.com**.
 
 This policy covers the DeSpark iOS app and its bundled Share Extension.
 
@@ -71,7 +71,7 @@ DeSpark does not collect data from anyone, including children. The app has no ac
 
 ## 8. Your rights
 
-Under the GDPR, CCPA/CPRA, and similar laws you have rights to access, correct, delete, and port your personal data. Because DeSpark holds no data about you, these rights are satisfied by design: everything the app stores is on your device and under your direct control. Deleting it is described in section 3. If you still have a question or concern, email **hadi.fiftytwo@gmail.com** and we will respond.
+Under the GDPR, CCPA/CPRA, and similar laws you have rights to access, correct, delete, and port your personal data. Because DeSpark holds no data about you, these rights are satisfied by design: everything the app stores is on your device and under your direct control. Deleting it is described in section 3. If you still have a question or concern, email **mukashi.dev@gmail.com** and we will respond.
 
 ---
 
@@ -84,4 +84,4 @@ If the app's data practices ever change (for example, if a future version adds o
 ## 10. Contact
 
 **Abdullah Al Hadi**
-Email: **hadi.fiftytwo@gmail.com**
+Email: **mukashi.dev@gmail.com**

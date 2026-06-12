@@ -6,4 +6,4 @@ Legal documents for the DeSpark iOS app.
 - [`privacy-policy.md`](privacy-policy.md) — canonical Markdown source
 - [`index.html`](index.html) — hosted page
 
-Maintained by Abdullah Al Hadi. Contact: hadi.fiftytwo@gmail.com
+Maintained by Abdullah Al Hadi. Contact: mukashi.dev@gmail.com
