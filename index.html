@@ -94,7 +94,7 @@
 <h2>1. The short version</h2>
 <p><strong>DeSpark does not collect, store, or transmit any data about you.</strong> The app works entirely on your device:</p>
 <ul>
-  <li>No network access — the app never connects to the internet.</li>
+  <li>No network use for your images — cleaning happens entirely offline. The app&rsquo;s only network request is loading this policy page when you open it from Settings.</li>
   <li>No analytics, no crash reporting, no advertising, no tracking SDKs.</li>
   <li>No accounts, no sign-in, no identifiers.</li>
 </ul>
@@ -124,6 +124,7 @@
   <li><strong>Photo library (choosing an image)</strong> — the system photo picker runs outside the app; DeSpark receives only the image you explicitly select, never your whole library.</li>
   <li><strong>Photo library (saving)</strong> — iOS asks for add-only permission the first time you save a cleaned image. This permission lets DeSpark add images to your library; it does not let it read your library.</li>
   <li><strong>Clipboard</strong> — read only when you tap "Paste image", via the standard iOS paste mechanism (iOS shows its own paste notice). DeSpark never reads the clipboard in the background.</li>
+  <li><strong>Privacy policy page</strong> — opening Settings → Privacy policy loads this page from GitHub Pages inside the app. Like any web page visit, GitHub may log standard request data such as your IP address (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>). The app sends nothing else.</li>
   <li><strong>Share Extension</strong> — when you use "Share → DeSpark" from another app, the extension receives only the image you shared and hands it to the app through a private on-device container.</li>
 </ul>
 
