@@ -11,16 +11,16 @@
     --bg: #ffffff;
     --panel: #f4f4f5;
     --border: #e4e4e7;
-    --accent: #0a8d93;
+    --accent: #0aa7ae;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --fg: #f4f4f5;
       --muted: #a1a1aa;
       --bg: #071f33;
-      --panel: #0e2a40;
+      --panel: #0f2c44;
       --border: #1d3a52;
-      --accent: #3ec3c9;
+      --accent: #2bd4da;
     }
   }
   * { box-sizing: border-box; }
@@ -48,6 +48,14 @@
     margin: 40px 0 10px;
     letter-spacing: -0.01em;
   }
+  h3 {
+    font-size: 1rem;
+    margin: 24px 0 8px;
+    color: var(--muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
   .effective {
     color: var(--muted);
     font-size: 0.95rem;
@@ -69,10 +77,18 @@
   a {
     color: var(--accent);
     text-decoration: none;
-    border-bottom: 1px solid rgba(10, 141, 147, 0.35);
+    border-bottom: 1px solid rgba(10, 167, 174, 0.35);
   }
   a:hover { border-bottom-color: var(--accent); }
   strong { font-weight: 650; }
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
   footer {
     margin-top: 48px;
     padding-top: 24px;
@@ -86,86 +102,194 @@
 <main>
 
 <h1>DeSpark — Privacy Policy</h1>
-<p class="effective"><strong>Effective date:</strong> June 12, 2026</p>
-<p class="intro">This policy explains what data DeSpark collects and the choices you have. It is written in plain English on purpose — and because DeSpark collects nothing, it is short.</p>
+<p class="effective"><strong>Effective date:</strong> June 25, 2026</p>
+<p class="intro">This policy explains what data DeSpark collects, why, and the choices you have. It is written in plain English on purpose — you should be able to read it in a few minutes.</p>
 
 <hr>
 
-<h2>1. The short version</h2>
-<p><strong>DeSpark does not collect, store, or transmit any data about you.</strong> The app works entirely on your device:</p>
+<h2>The short version</h2>
+<p>DeSpark removes unwanted objects and distractions from your photos, and the image editing happens <strong>entirely on your device</strong>. <strong>Your photos are never uploaded</strong> — not to us, not to anyone.</p>
+<p>To keep the app free and to improve it, DeSpark works with a few other companies: it sends a small amount of <strong>anonymous diagnostic data</strong> to Google Firebase (which features you use and crash reports — never your images), and the <strong>free version shows ads</strong> from Google AdMob, which — only with your permission — may use a device advertising identifier to show and measure ads. An optional <strong>Pro</strong> purchase removes all ads. Your photos are never part of any of this and never leave your device.</p>
+
+<hr>
+
+<h2>1. Who we are</h2>
+<p>DeSpark is an app that removes unwanted objects and distractions from photos. It is developed and operated by <strong>Abdullah Al Hadi</strong> ("we", "us"). For the purposes of the EU / UK / EEA General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA), Abdullah Al Hadi is the <strong>data controller</strong> for personal data collected through the app. For any privacy question, contact us at <strong>mukashi.dev@gmail.com</strong>.</p>
+<p>This policy covers the DeSpark app on <strong>iOS, iPadOS, Android, and macOS</strong>, including the iOS Share Extension ("Share → DeSpark"). The ads described in §4 are shown on iOS, iPadOS, and Android; the macOS build does not display ads.</p>
+
+<hr>
+
+<h2>2. Data that stays on your device — never sent anywhere</h2>
+<p>The following lives only on your device, in the app's private storage. We have no server that stores it and no way to read it.</p>
 <ul>
-  <li>No network use for your images — cleaning happens entirely offline. The app&rsquo;s only network request is loading this policy page when you open it from Settings.</li>
-  <li>No analytics, no crash reporting, no advertising, no tracking SDKs.</li>
-  <li>No accounts, no sign-in, no identifiers.</li>
+  <li><strong>The images you clean</strong> — the picture you pick, paste, or share into the app, and the cleaned result. These are processed on-device and are never uploaded.</li>
+  <li><strong>Your in-app gallery</strong> — the before/after pairs the app keeps so you can reopen them later, stored in the app's private container.</li>
+  <li><strong>App state</strong> — small flags such as whether you've seen the onboarding and how many results you've kept (used to decide when to offer a review prompt) and your local preferences.</li>
 </ul>
-<p>Every image you clean is processed locally on your phone and never leaves it.</p>
+<p>You can delete the gallery at any time (<strong>Settings → Clear gallery</strong>, or delete an individual result). Uninstalling the app removes all of it.</p>
+<p>If you have iCloud Backup (iOS) or device backup (Android/macOS) enabled, your operating system may include the app's local data in a backup you control in system settings. Those backups are between you and Apple/Google; we have no access to them.</p>
 
 <hr>
 
-<h2>2. Who we are</h2>
-<p>DeSpark is an iOS app that removes the visible Gemini sparkle watermark from AI-generated images. It is developed and operated by <strong>Abdullah Al Hadi</strong> ("we", "us"). To the extent the EU / UK / EEA General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA) applies, Abdullah Al Hadi is the <strong>data controller</strong> — though, as described below, we hold no personal data about you at all. For any privacy questions, contact us at <strong>mukashi.dev@gmail.com</strong>.</p>
-<p>This policy covers the DeSpark iOS app and its bundled Share Extension.</p>
+<h2>3. Data sent to Firebase (Google)</h2>
+<p>We use two Firebase services from Google: <strong>Analytics</strong> and <strong>Crashlytics</strong>. Both are configured with the minimum data surface needed for product decisions and crash fixing — Firebase itself uses <strong>no advertising identifiers</strong> and does no cross-app tracking. (The separate, permission-gated advertising identifier used to show ads is described in §4.)</p>
 
-<hr>
-
-<h2>3. Data that stays on your device</h2>
-<p>Everything below is stored locally on your device, inside DeSpark's private app container. We never see it. If you have iCloud Backup enabled on your iPhone, Apple includes this data in your encrypted iCloud backup — that backup is between you and Apple; we have no access to it.</p>
+<h3>Firebase Analytics collects</h3>
 <ul>
-  <li><strong>Images you open</strong> — the photo you pick, paste, or share into the app, held in memory while it is processed.</li>
-  <li><strong>Gallery history</strong> — after a successful clean, DeSpark keeps the before/after pair and a small thumbnail so you can revisit and re-share results from the Gallery tab.</li>
+  <li>App-scoped identifiers only (Apple's IDFV / a Firebase installation ID). These cannot identify you across other apps.</li>
+  <li>Device type, OS version, app version, language, and country (derived from IP).</li>
+  <li>Which screens you view in the app.</li>
+  <li>Aggregate feature usage, so we can decide what to keep, fix, or improve. For example:
+    <ul>
+      <li>How an image entered the app — <em>gallery</em>, <em>paste</em>, or <em>share</em> (and whether a paste found no image) — never the image itself.</li>
+      <li>The result of automatic cleanup — <em>detected</em>, <em>low confidence</em>, <em>not detected</em>, or <em>manual</em> — whether something was removed, and the output format (<em>jpg</em> or <em>png</em>).</li>
+      <li>Whether processing failed, with a generic reason (e.g. <em>too large</em>, <em>decode failed</em>).</li>
+      <li>Use of the manual brush (opened, an erase applied, kept) and the "try auto-clean anyway" action.</li>
+      <li>Saving and sharing a result, and which screen it came from.</li>
+      <li>Gallery actions — opening, deleting, or clearing kept results (counts only).</li>
+      <li>Onboarding completion, tab navigation, review prompts, and which Settings support rows you tap.</li>
+    </ul>
+  </li>
 </ul>
-<p>You can delete any of this at any time from within the app (delete a single result in its viewer, or Settings → "Clear gallery"). Uninstalling the app removes all of it.</p>
-<p>Nothing is sent anywhere. There is no "our servers" — the app has no server.</p>
+<p>Each event carries at most a few categorical labels (like <code>source: paste</code>). <strong>No free-form text and no image content is ever included.</strong></p>
+<p>Firebase Analytics is configured <strong>not</strong> to collect your advertising identifier (IDFA/AAID); it cannot link you across other apps or websites.</p>
 
-<hr>
-
-<h2>4. Permissions the app asks for</h2>
+<h3>Firebase Crashlytics collects data only when the app crashes</h3>
 <ul>
-  <li><strong>Photo library (choosing an image)</strong> — the system photo picker runs outside the app; DeSpark receives only the image you explicitly select, never your whole library.</li>
-  <li><strong>Photo library (saving)</strong> — iOS asks for add-only permission the first time you save a cleaned image. This permission lets DeSpark add images to your library; it does not let it read your library.</li>
-  <li><strong>Clipboard</strong> — read only when you tap "Paste image", via the standard iOS paste mechanism (iOS shows its own paste notice). DeSpark never reads the clipboard in the background.</li>
-  <li><strong>Privacy policy page</strong> — opening Settings → Privacy policy loads this page from GitHub Pages inside the app. Like any web page visit, GitHub may log standard request data such as your IP address (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>). The app sends nothing else.</li>
-  <li><strong>Share Extension</strong> — when you use "Share → DeSpark" from another app, the extension receives only the image you shared and hands it to the app through a private on-device container.</li>
+  <li>Stack traces from the crash.</li>
+  <li>A snapshot of device state at the time of the crash (OS version, device model, memory/disk, locale).</li>
+  <li>A non-fatal error we report if the image-processing step fails unexpectedly — we send only the error's <strong>type</strong>, never the image or any text derived from it.</li>
 </ul>
+<p>Crashlytics is <strong>disabled in our development builds</strong>; it is active in the release build you install from a store.</p>
+<p><strong>What we never send to Firebase:</strong> the image you are cleaning, the cleaned result, any image bytes, pixels, file names, file paths, or photo metadata (EXIF). All editing happens on your device; the picture itself does not leave it.</p>
+<p><strong>Legal basis (EEA / UK / Switzerland).</strong> Where the GDPR or UK GDPR applies, we process this anonymous analytics and crash-diagnostic data under our <strong>legitimate interests</strong> (Art. 6(1)(f)) — understanding how the app is used and keeping it stable — balanced against your privacy. You can object at any time (see §12).</p>
 
 <hr>
 
-<h2>5. How the processing works</h2>
-<p>Watermark removal runs entirely on your device: the app detects the visible sparkle watermark in the image corner and reverses its blend. Only the <strong>visible</strong> watermark is affected — Google's invisible SynthID provenance signal embedded in Gemini images is not read, altered, or removed by DeSpark.</p>
-
-<hr>
-
-<h2>6. What we never do</h2>
+<h2>4. Ads (Google AdMob)</h2>
+<p>The free version of DeSpark is supported by ads from <strong>Google AdMob</strong> — a banner on the home screen and an occasional full-screen ad between actions. Buying <strong>Pro</strong> (see §5) removes all ads. Ads appear on iOS, iPadOS, and Android; the macOS build shows no ads.</p>
+<p>To request and measure ads, Google's Mobile Ads SDK collects and shares with Google:</p>
 <ul>
-  <li>We never transmit your images or any derivative of them.</li>
-  <li>We do not sell or share personal information (as those terms are defined under the CCPA/CPRA) — we have none to sell.</li>
-  <li>We do not bundle any third-party analytics, advertising, or tracking SDK.</li>
-  <li>We do not request App Tracking Transparency permission, because there is no tracking.</li>
+  <li>a <strong>device advertising identifier</strong> (Apple's IDFA on iOS, the Advertising ID on Android) — used only if you grant permission (see consent below);</li>
+  <li>your <strong>IP address</strong> and the <strong>coarse location/region</strong> derived from it;</li>
+  <li><strong>device and app information</strong> (model, OS version, app version, language); and</li>
+  <li><strong>ad interactions</strong> — which ads were shown, and whether you tapped one.</li>
+</ul>
+<p>Google uses this to serve ads, cap how often you see the same ad, detect invalid activity, and measure performance — and, where you have granted permission, to show <strong>personalized</strong> (more relevant) ads. Google acts as an independent controller for the ad data it receives; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from apps that use its services</a>.</p>
+<p><strong>Your consent and choices.</strong> Before any ad loads, on first launch:</p>
+<ul>
+  <li><strong>iOS — App Tracking Transparency.</strong> The system asks permission to use your device's advertising identifier (IDFA). If you choose <strong>"Ask App Not to Track,"</strong> your IDFA is not used and ads are <strong>non-personalized</strong>. You can change this any time in <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
+  <li><strong>EEA, UK, and Switzerland.</strong> Google's <strong>User Messaging Platform (UMP)</strong> shows a consent form; your choice there determines whether ads are personalized or non-personalized.</li>
+  <li>If permission or consent isn't granted, the app shows <strong>non-personalized</strong> ads — or, if the ad system can't initialize, simply runs without ads.</li>
+</ul>
+<p><strong>SKAdNetwork (iOS).</strong> DeSpark includes Apple's SKAdNetwork identifiers so advertising can be attributed and measured in a privacy-preserving way that does not identify you.</p>
+<p><strong>Your photos are never used for advertising</strong> and are never shared with the ad network.</p>
+
+<hr>
+
+<h2>5. Purchases &amp; subscriptions (RevenueCat, Apple, Google)</h2>
+<p>DeSpark is free to use. You can optionally upgrade to <strong>Pro</strong> — a weekly subscription or a one-time lifetime purchase — which <strong>removes all ads</strong>. Purchasing is entirely optional.</p>
+<ul>
+  <li><strong>Payment</strong> is handled by <strong>Apple (App Store)</strong> or <strong>Google (Google Play)</strong>. We never see or store your card number, billing address, or other payment details — the store processes the payment under its own privacy policy.</li>
+  <li>We use <strong>RevenueCat</strong> to check and restore what you've purchased. RevenueCat receives a <strong>randomly generated, app-specific user ID</strong> (not your name or email), your <strong>purchase and transaction history</strong> and store <strong>receipt</strong>, and basic <strong>device, platform, and country</strong> information, so the app can tell whether Pro is active and restore it on a new device. RevenueCat is our service provider and uses this data only to deliver and support your purchase; see the <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>.</li>
+  <li>This purchase data is <strong>not</strong> linked to the images you edit or to your photo library.</li>
 </ul>
 
 <hr>
 
-<h2>7. Children</h2>
-<p>DeSpark does not collect data from anyone, including children. The app has no accounts, no social features, and no advertising.</p>
+<h2>6. The "Report a bug" email path</h2>
+<p>If an image doesn't clean correctly, the app offers <strong>"Report this image"</strong> (and Settings → <strong>Report a bug</strong>). These open a pre-filled email <strong>in your own mail app</strong>. A bug report pre-fills your app version, platform, OS version, and device model, and — only if you choose to attach it — the image that failed.</p>
+<p>Nothing is sent until you press Send in your mail app. The image, and anything else in the email, reaches us <strong>only by your explicit action</strong>, via your email provider to <strong>mukashi.dev@gmail.com</strong>. This is the only way an image would ever leave your device, and only because you chose to send it to help us reproduce a bug.</p>
 
 <hr>
 
-<h2>8. Your rights</h2>
-<p>Under the GDPR, CCPA/CPRA, and similar laws you have rights to access, correct, delete, and port your personal data. Because DeSpark holds no data about you, these rights are satisfied by design: everything the app stores is on your device and under your direct control. Deleting it is described in section 3. If you still have a question or concern, email <strong>mukashi.dev@gmail.com</strong> and we will respond.</p>
+<h2>7. Permissions the app asks for</h2>
+<ul>
+  <li><strong>Photo library</strong> — on iOS, iPadOS, and Android, to pick the image you want to clean and to save the cleaned result back to your library. On macOS we open images through a standard file picker and request only add-to-Photos access to save results. We read only the image(s) you explicitly select, and save only when you tap Save. Your photos are not uploaded.</li>
+  <li><strong>Clipboard</strong> — read only when you tap "Paste image", to bring in an image you copied.</li>
+  <li><strong>App Tracking Transparency (iOS)</strong> — a one-time prompt asking whether DeSpark may use your device's advertising identifier for ads (see §4). Saying no still lets the app work, with non-personalized ads.</li>
+  <li><strong>Network</strong> — used by the Firebase SDKs (§3) to send diagnostic data, by Google AdMob (§4) to request and measure ads in the free version, by the purchase system (§5) to validate and restore Pro, and (on iOS and Android) by the in-app browser that shows this policy. On macOS the app is sandboxed and is granted only outbound network (<code>network.client</code>) and add-to-photo-library access for saving results.</li>
+  <li>DeSpark does <strong>not</strong> use the camera, microphone, precise location, contacts, or calendar.</li>
+</ul>
 
 <hr>
 
-<h2>9. Changes to this policy</h2>
-<p>If the app's data practices ever change (for example, if a future version adds opt-in crash reporting), we will update this policy, change the effective date at the top, and describe the change here before it ships.</p>
+<h2>8. How on-device editing works</h2>
+<p>All detection and editing run <strong>on-device</strong>, in the app. DeSpark removes only the visible content you select or that automatic cleanup targets. No image is uploaded for processing.</p>
 
 <hr>
 
-<h2>10. Contact</h2>
-<p><strong>Abdullah Al Hadi</strong><br>
-Email: <strong>mukashi.dev@gmail.com</strong></p>
+<h2>9. What we never do</h2>
+<ul>
+  <li>We never upload, store, or transmit <strong>the images you edit</strong> — image content stays on your device and leaves it only via a bug-report email <strong>you</strong> choose to send (§6).</li>
+  <li>We never use your <strong>photos</strong> to target or personalize ads, and we never share your images with the ad network or any other third party.</li>
+  <li>We never <strong>sell your personal information for money.</strong></li>
+  <li>We don't link your analytics, ad, or purchase data to your real-world identity — there is no account system and we never ask for your name.</li>
+</ul>
+
+<hr>
+
+<h2>10. Third parties</h2>
+<ul>
+  <li><strong>Firebase</strong> (Google LLC) — Analytics and Crashlytics, processed as our service provider under the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase Data Processing and Security Terms</a>. Google's own practices are covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Google primarily processes this data on servers in the <strong>United States</strong>; for EEA/UK/Swiss users, transfers rely on Google's Standard Contractual Clauses and the UK International Data Transfer Addendum.</li>
+  <li><strong>Google AdMob</strong> (Google LLC) — serves the ads in the free version of the app (§4), covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Google may use the ad data it receives as an independent controller.</li>
+  <li><strong>RevenueCat, Inc.</strong> — manages subscription and purchase entitlements (§5) as our service provider; see the <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>.</li>
+  <li><strong>Apple App Store / Google Play</strong> — install, review, and rate prompts, <strong>and processing your purchases</strong>. Governed by Apple's and Google's own privacy policies.</li>
+  <li><strong>Gmail</strong> (Google LLC) — receives a support email only if you choose to send one.</li>
+  <li><strong>GitHub Pages</strong> — hosts this policy page; GitHub may log standard request data (such as your IP address) when you open it.</li>
+</ul>
+
+<hr>
+
+<h2>11. How long we keep it</h2>
+<ul>
+  <li><strong>On-device data</strong> — until you delete it or uninstall the app.</li>
+  <li><strong>Firebase Analytics</strong> — Google retains event-level data per its default window (up to 14 months), after which older events are aggregated or dropped.</li>
+  <li><strong>Firebase Crashlytics</strong> — Google retains crash reports for <strong>90 days</strong>.</li>
+  <li><strong>Advertising data</strong> — retained by Google according to the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>; we keep no ad data ourselves.</li>
+  <li><strong>Purchase data</strong> — RevenueCat and the app stores keep purchase records for as long as needed to provide, restore, and support your purchase and to meet legal, tax, and accounting obligations.</li>
+  <li><strong>Support emails</strong> — kept in our inbox no longer than needed to handle your request and any follow-up.</li>
+</ul>
+
+<hr>
+
+<h2>12. Your rights and choices</h2>
+<ul>
+  <li><strong>Delete your in-app gallery</strong> any time — <strong>Settings → Clear gallery</strong>, or delete an individual result.</li>
+  <li><strong>Control ad personalization</strong> — on <strong>iOS</strong>, change your choice in <strong>Settings → Privacy &amp; Security → Tracking</strong>; on <strong>Android</strong>, reset or delete your Advertising ID in system settings. Opting out switches you to non-personalized ads.</li>
+  <li><strong>Remove ads entirely</strong> — upgrade to <strong>Pro</strong> (in <strong>Settings</strong>), which turns off all ads.</li>
+  <li><strong>Stop all telemetry</strong> — uninstalling the app stops any further analytics and crash reporting from your device and invalidates the Firebase installation ID.</li>
+  <li><strong>Access or erase your data</strong> under GDPR (EEA, UK), CCPA/CPRA (California), Brazil's LGPD, or similar laws — email <strong>mukashi.dev@gmail.com</strong>. Because we don't tie analytics or ad data to a persistent identity, the most reliable erasure is uninstalling the app and resetting your device advertising identifier.</li>
+  <li><strong>Lodge a complaint</strong> — if you're in the EEA, UK, or Switzerland, you may complain to your local data protection authority. We'd appreciate the chance to address your concern first — email <strong>mukashi.dev@gmail.com</strong> and we'll respond within 30 days.</li>
+</ul>
+<p>We don't sell your personal information for money. If you allow tracking, your device's advertising identifier may be used to personalize ads — which California law (CCPA/CPRA) treats as <strong>"sharing"</strong> for cross-context behavioral advertising. You can opt out at any time by denying tracking (iOS) or resetting your Advertising ID (Android), declining the consent form where it's shown, or upgrading to <strong>Pro</strong>.</p>
+
+<hr>
+
+<h2>13. Children's privacy</h2>
+<p>DeSpark is a general-audience app and is not directed at children under 13 (or the equivalent age in your region). We don't knowingly collect personal data from children. If you believe a child has used the app and want associated diagnostic data removed, email <strong>mukashi.dev@gmail.com</strong>.</p>
+
+<hr>
+
+<h2>14. Security</h2>
+<ul>
+  <li>On-device data is stored in the app's private sandbox. Data sent to Firebase, the ad network, and the purchase system travels over HTTPS (TLS).</li>
+  <li>We operate no server that holds your content, so there is no central store of your images to breach.</li>
+  <li>No method of transmission or storage is 100% secure. If we become aware of a breach affecting your data, we will notify you as required by applicable law.</li>
+</ul>
+
+<hr>
+
+<h2>15. Changes to this policy</h2>
+<p>If we change this policy, the new version replaces this page at <strong>https://hadicuet.github.io/despark-legal/</strong> and the "Effective date" above is updated. Material changes (such as a new third-party service or a new category of data) will be called out in the app's release notes.</p>
+
+<hr>
+
+<h2>16. Contact us</h2>
+<p>Questions, requests, or complaints: <strong>mukashi.dev@gmail.com</strong>.</p>
 
 <footer>
-DeSpark — on-device Gemini watermark removal. This page is the canonical privacy policy for the DeSpark iOS app.
+  © Abdullah Al Hadi. Last updated June 25, 2026. &nbsp;·&nbsp; <a href="./support.html">Support</a>
 </footer>
 
 </main>
